@@ -23,3 +23,4 @@ class ToDoManager {
     // this.id.slice(id, 1);
   }
 }
+const todoMangers = new ToDoManager();
