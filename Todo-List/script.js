@@ -32,6 +32,7 @@ btnAdd.addEventListener("click", function () {
 
     todoMangers.addToDo(instanca1);
 
+    displayElement.innerHTML += instanca1.addToDo();
     console.log(instanca1);
   }
   value = "";
