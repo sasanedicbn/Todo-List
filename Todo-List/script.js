@@ -24,3 +24,8 @@ class ToDoManager {
   }
 }
 const todoMangers = new ToDoManager();
+btnAdd.addEventListener("click", function () {
+  let value = input.value.trim();
+
+  value = "";
+});
