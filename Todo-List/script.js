@@ -26,6 +26,13 @@ class ToDoManager {
 const todoMangers = new ToDoManager();
 btnAdd.addEventListener("click", function () {
   let value = input.value.trim();
+  if (value !== "") {
+    let instanca1 = new ToDO(value);
+    console.log(instanca1.addToDo());
 
+    todoMangers.addToDo(instanca1);
+
+    console.log(instanca1);
+  }
   value = "";
 });
