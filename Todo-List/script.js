@@ -12,3 +12,14 @@ class ToDO {
     return `<div class="newEl"><li>${this.text}</li> <span class="remove">❌</span> </div>`;
   }
 }
+class ToDoManager {
+  constructor(todos) {
+    this.todos = [];
+  }
+  addToDo(todo) {
+    this.todos.push(todo);
+  }
+  deleteToDo(id) {
+    // this.id.slice(id, 1);
+  }
+}
