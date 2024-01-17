@@ -38,4 +38,7 @@ btnAdd.addEventListener("click", function () {
   input.value = "";
 });
 
-displayElement.addEventListener("click", function (event) {});
+displayElement.addEventListener("click", function (event) {
+  if (event.target.classList.contains("remove")) {
+  }
+});
