@@ -42,5 +42,7 @@ displayElement.addEventListener("click", function (event) {
   if (event.target.classList.contains("remove")) {
     let parentElement = event.target.closest(".newEl");
     let id = parseInt(parentElement.getAttribute("data-id"));
+
+    todoMangers.deleteToDo(id);
   }
 });
