@@ -30,11 +30,14 @@ const todoMangers = new ToDoManager();
 
 btnAdd.addEventListener("click", function () {
   let value = input.value.trim();
-  if (value !== "") {
-    let instanca1 = new ToDO(value);
-    todoMangers.addToDo(instanca1);
-    displayElement.innerHTML += instanca1.addToDo();
-  }
+  if (!value) return;
+
+  let instanca1 = new ToDO(value);
+  todoMangers.addToDo(instanca1);
+
+  displayElement.innerHTML += instanca1.addToDo();
+  const toDoHtml = instanca1.addToDo();
+
   input.value = "";
 });
 
@@ -46,7 +49,5 @@ displayElement.addEventListener("click", function (event) {
     todoMangers.deleteToDo(id);
 
     parentElement.remove();
-    console.log("Obrisano:", id);
-    console.log("Trenutno stanje niza:", todoMangers.todos);
   }
 });
