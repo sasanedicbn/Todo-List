@@ -46,5 +46,7 @@ displayElement.addEventListener("click", function (event) {
     todoMangers.deleteToDo(id);
 
     parentElement.remove();
+    console.log("Obrisano:", id);
+    console.log("Trenutno stanje niza:", todoMangers.todos);
   }
 });
