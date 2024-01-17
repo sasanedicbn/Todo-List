@@ -17,9 +17,12 @@ class ToDoManager {
   constructor() {
     this.todos = [];
   }
-
   addToDo(todo) {
     this.todos.push(todo);
+  }
+
+  deleteToDo(id) {
+    this.todos = this.todos.filter((todo) => todo.id !== id);
   }
 }
 
@@ -34,3 +37,5 @@ btnAdd.addEventListener("click", function () {
   }
   input.value = "";
 });
+
+displayElement.addEventListener("click", function (event) {});
