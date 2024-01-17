@@ -44,5 +44,7 @@ displayElement.addEventListener("click", function (event) {
     let id = parseInt(parentElement.getAttribute("data-id"));
 
     todoMangers.deleteToDo(id);
+
+    parentElement.remove();
   }
 });
