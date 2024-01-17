@@ -40,5 +40,6 @@ btnAdd.addEventListener("click", function () {
 
 displayElement.addEventListener("click", function (event) {
   if (event.target.classList.contains("remove")) {
+    let parentElement = event.target.closest(".newEl");
   }
 });
